@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/full-page-scroll.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dev Journey</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+
+<body>
+    <div id="mask" style="position: absolute; top: 0; left: 0; background: white; display: none;"></div>
+    <div id="main" class="scroll-container">
+        <header id="m_menu">
+
+            <span id="mobile_menu"><img src="images/menu_icon.png"></span>
+            <ul id="navigation-list">
+                <li><a href="#m_mypage" class="m_move">MY PAGE</a></li>
+                <hr>
+                <li><a href="#m_profile" class="m_move">PROFILE</a></li>
+                <hr>
+                <li><a href="#m_portfolio" class="m_move">PORTFOLIO</a></li>
+            </ul>
+        </header>
+        <section class="section1">
+            <div class="container" role="main" id="m_mypage">
+                <div class="div-left">
+                    <div class="sub_wrap left1">
+                        <div class="title_wrap">
+                            <h3>Profile</h3>
+                        </div>
+                        <div class="profile_wrap">
+                            <img src="images/profile.jpg" id="pic">
+                            <ul id="prof">
+                                <li id="my-name">김나빈(Kim Nabin)</li>
+                                <li>1997.11.06.</li>
+                                <li>ppoxx77@gmail.com</li>
+                                <li>
+                                    <p id="reward_text">획득한 칭호</p>
+                                    <img src="images/icon1_s.png" id="test1" class="prof_icon">
+                                    <img src="images/icon2_s.png" id="test2" class="prof_icon">
+                                    <img src="images/icon3_s.png" id="test3" class="prof_icon">
+                                    <img src="images/icon4_s.png" id="test4" class="prof_icon">
+                                    <img src="images/icon5_s.png" id="test5" class="prof_icon">
+                                    <img src="images/icon6_s.png" id="test6" class="prof_icon">
+                                </li>
+                                <li><img src="images/git.png">
+                                    <img src="images/tistory.png"></li>
+                            </ul>
+                        </div>
+                        <div class="button_wrap">
+                            <span class="button" id="btn_detail">자세히 보기</span>
+                        </div>
+                        <div class="skill">
+                            <h3>Skills</h3>
+                            <ul class="skill_bar" id="main_skill">
+                                <li>
+                                    <span>C</span>
+                                    <div class="bar">
+                                        <div class="bar_bg">
+                                            <div class="skills skill-80">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>JAVA</span>
+                                    <div class="bar">
+                                        <div class="bar_bg">
+                                            <div class="skills skill-90">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>C++</span>
+                                    <div class="bar">
+                                        <div class="bar_bg">
+                                            <div class="skills skill-70">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Android</span>
+                                    <div class="bar">
+                                        <div class="bar_bg">
+                                            <div class="skills skill-90">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Photoshop</span>
+                                    <div class="bar">
+                                        <div class="bar_bg">
+                                            <div class="skills skill-90">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="skill_detail_text" id="skill_text">
+                                <li>Unreal Engine 활용 가능</li>
+                                <li>Java TCP 소켓 프로그래밍 가능</li>
+                                <li>MS-SQL, MySQL 쿼리문 조작 및 테이블 관리</li>
+                                <li>Android 애플리케이션 제작 가능</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-right" id="main_right">
+                    <div class="sub_wrap right1">
+                        <div class="title_wrap">
+                            <h3>Quest</h3>
+                        </div>
+                        <div class="quest_wrap">
+                            <table class="quest_table">
+                                <tr>
+                                    <td class="quest_img"><img src="images/quest.png"></td>
+                                    <td>반응형 포트폴리오 웹</td>
+                                    <td>진행 중</td>
+                                </tr>
+                                <tr>
+                                    <td class="quest_img"><img src="images/quest.png"></td>
+                                    <td>스토리 위주 RPG 게임</td>
+                                    <td>진행 중</td>
+                                </tr>
+                                <tr>
+                                    <td class="quest_img"><img src="images/quest_check.png"></td>
+                                    <td>캘린더형 다이어리 앱, '나날'</td>
+                                    <td>완료</td>
+                                </tr>
+                                <tr>
+                                    <td class="quest_img"><img src="images/quest_check.png"></td>
+                                    <td>자기소개 앱, '취준생 A'</td>
+                                    <td>완료</td>
+                                </tr>
+                                <tr>
+                                    <td class="quest_img"><img src="images/quest_check.png"></td>
+                                    <td>Java 이모티콘 채팅 프로그램</td>
+                                    <td>완료</td>
+                                </tr>
+                                <tr>
+                                    <td class="quest_img"><img src="images/quest_check.png"></td>
+                                    <td>미세먼지 알림, '미세미세미세'</td>
+                                    <td>완료</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="button_wrap">
+                            <span class="button" id="btn_quest">자세히 보기</span>
+                        </div>
+                    </div>
+                    <div class="sub_wrap right1" id="right_bottom">
+                        <div class="title_wrap">
+                            <h3>Contact</h3>
+                        </div>
+                        <div class="contact_wrap">
+                            <span id="mail_text">연락처를 포함하여 메일을 남겨 주세요.<br>빠른 시일 내로 회신 드리겠습니다. ^_^*</span>
+                            <form class="gform" method="post" data-email="ppoxx77@gmail.com" action="https://script.google.com/macros/s/AKfycbwjYKVI8bNmvuUDn5Mm8RpIaNZ8CQ8qcvlR5VhbpcnR2GvvszLY/exec" name="email_form">
+                                <div class="form-elements">
+                                    <input id="email" name="email" type="text" placeholder="Enter your e-mail or phone number.">
+                                    <button id="email_button">전송</button>
+                                    <br>
+                                    <textarea id="mail" name="mail"></textarea>
+                                </div>
+                                <p class="thankyou_message" style="display:none;">
+                                    감사합니다!</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="container" role="main" id="m_profile">
+                <div class="div-left">
+                    <div class="sub_wrap left1">
+                        <div class="detail_wrap">
+                            <img id="pic-detail" src="images/profile-detail.png">
+                            <ul id="prof-detail">
+                                <li id="my-name-detail">김나빈(金那彬)/Kim Nabin
+                                    <img src="images/git.png">
+                                    <img src="images/tistory.png">
+                                </li>
+                                <li class="detail-text">1997.11.06.</li>
+                                <li class="detail-text">ppoxx77@gmail.com</li>
+                                <li id="says">"매사에 노력하는 이상적인 개발자"</li>
+                            </ul>
+                        </div>
+                        <div class="reward_wrap">
+                            <p class="detail_bold_text">획득한 칭호</p>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="images/icon1.png" id="icon_d1">
+                                    </td>
+                                    <td>
+                                        <b>소통의 귀재</b><br>
+                                        원활한 커뮤니케이션을 주도할 수 있는 사람입니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="images/icon2.png" id="icon_d2">
+                                    </td>
+                                    <td>
+                                        <b>여행의 길잡이</b><br>올바른 방향으로 바르게 이끄는 사람입니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="images/icon3.png" id="icon_d3">
+                                    </td>
+                                    <td>
+                                        <b>무한 피드백</b><br>
+                                        꾸준히 자신을 돌아보며 부족한 부분을 고치는 사람입니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="images/icon4.png" id="icon_d4">
+                                    </td>
+                                    <td>
+                                        <b>리더의 선글라스</b><br>
+                                        바람직한 리더의 자질이 있는 사람입니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="images/icon5.png" id="icon_d5">
+                                    </td>
+                                    <td>
+                                        <b>미래의 스타</b><br>
+                                        미래지향적인 사람에게 주어지는 칭호입니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="images/icon6.png" id="icon_d6">
+                                    </td>
+                                    <td>
+                                        <b>우직한 소나무</b><br>꾸준하게 노력하는 사람입니다.
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="div-right">
+                    <div class="sub_wrap right2">
+
+                        <div class="equip_wrap">
+                            <p class="detail_bold_text">장비</p>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="images/equip1.png" id="icon_e1">
+                                    </td>
+                                    <td>
+                                        공항고등학교 졸업<br>
+                                        2013.03. ~ 2016.02.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="images/equip2.png" id="icon_e2">
+                                    </td>
+                                    <td>
+                                        동양미래대학교 컴퓨터정보공학과 재학<br>
+                                        2018.03. ~ 2020.02(졸업 예정)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="images/equip3.png" id="icon_e3">
+                                    </td>
+                                    <td>
+                                        교내 기술창업 아이디어 공모전 장려상<br>
+                                        2019.11.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="images/equip4.png" id="icon_e4">
+                                    </td>
+                                    <td>
+                                        성적 장학금 2회<br>
+                                        1-1(4.32/4.5), 1-2(4.39/4.5)
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p class="detail_bold_text" id="detail_skill">획득한 스킬</p>
+                        <ul class="skill_bar" id="skill_detail">
+                            <li>
+                                <span>C</span>
+                                <div class="bar">
+                                    <div class="bar_bg">
+                                        <div class="skills skill-80">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>JAVA</span>
+                                <div class="bar">
+                                    <div class="bar_bg">
+                                        <div class="skills skill-90">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>C++</span>
+                                <div class="bar">
+                                    <div class="bar_bg">
+                                        <div class="skills skill-70">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Android</span>
+                                <div class="bar">
+                                    <div class="bar_bg">
+                                        <div class="skills skill-90">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Photoshop</span>
+                                <div class="bar">
+                                    <div class="bar_bg">
+                                        <div class="skills skill-90">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="skill_detail_text">
+                            <li>Unreal Engine 활용 가능</li>
+                            <li>Java TCP 소켓 프로그래밍 가능</li>
+                            <li>MS-SQL, MySQL 쿼리문 조작 및 테이블 관리</li>
+                            <li>Android 애플리케이션 제작 가능</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="container" role="main" id="m_portfolio">
+                <div class="div-left">
+                    <div class="sub_wrap left1">
+                        <div class="quest_msg_p">
+                            <p class="quest_msg">2년이라는 시간이 순식간에 지나갔다. 시험도 끝, 과제도 끝……. 남은 건 취업 준비뿐! 취업을 하기 위해서는 당연히 포트폴리오가 필요하겠지? 지금까지 개발한 작품들과 나의 장점을 모아서 멋진 포트폴리오 사이트를 완성해 보자!</p>
+                        </div>
+                        <p class="quest_notice">진행 중인 퀘스트입니다.</p>
+                        <p class="quest_title">반응형 포트폴리오 웹</p>
+
+                        <img src="images/profile-detail.png" width="100%">
+                        <div class="quest_text"><p>설명을 입력합니다. 설명을 입력합니다. 설명을 입력합니다. 설명을 입력합니다. </p>
+                        </div>
+                        <p class="quest_link"><img src="images/git.png">http://</p>
+                        <ul>
+                            <li>개발 기간: 2019.11 ~ 2019.12</li>
+                            <li>HTML/CSS + JavaScript</li>
+                            <li>Brackets</li>
+                            <li>개인 프로젝트</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="div-right">
+                    <div class="sub_wrap right3">
+                        <div class="quest_msg_p">
+                            <p class="quest_msg">나빈! 네가 게임을 좋아한다는 소식을 듣고 찾아왔어. 실은, 요즘 할 게임이 없어서 고민이 많다구……. 혹시 스토리가 가미된 새로운 게임 어디 없을까? 너도 나도 RPG 장르를 좋아하니까, RPG 장르의 게임이면 더 좋을 것 같아.</p>
+                        </div>
+                        <p class="quest_notice">진행 중인 퀘스트입니다.</p>
+                        <p class="quest_title">스토리 위주 RPG 게임(가제)</p>
+                        <img src="images/profile-detail.png" width="100%">
+                        <div class="quest_text"><p>설명을 입력합니다. 설명을 입력합니다. 설명을 입력합니다. 설명을 입력합니다. </p>
+                        </div>
+                        <p class="quest_link">
+                            <img src="images/git.png">
+                            <span>준비 중</span>
+                        </p>
+                        <ul>
+                            <li>개발 기간: 미정</li>
+                            <li>C++</li>
+                            <li>Unreal Engine4</li>
+                            <li>개인 프로젝트</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section4">
+            <div class="container" role="main">
+                <div class="div-left">
+                    <div class="sub_wrap left1">
+                        <div class="quest_msg_p">
+                            <p class="quest_msg">나빈, 내 고민 좀 들어줘. 실은…… 스마트폰을 산 후로 다이어리를 안 쓰는 날이 많아졌지 뭐야? 친구들이랑 일정도 맞추고 그날 있었던 일을 공유하고 싶은데, 다이어리에 수필로 작성하면 번거롭기도 해서. 혹시 괜찮은 앱 없을까?</p>
+                        </div>
+                        <p class="quest_notice">완료된 퀘스트입니다.</p>
+                        <p class="quest_title">캘린더형 다이어리 앱, '나날'</p>
+                        <img src="images/profile-detail.png" width="100%">
+                        <div class="quest_text"><p>설명을 입력합니다. 설명을 입력합니다. 설명을 입력합니다. 설명을 입력합니다. </p>
+                        </div>
+                        <p class="quest_link"><img src="images/git.png">http://</p>
+                        <ul>
+                            <li>개발 기간: 2019.08 ~ 2019.11</li>
+                            <li>Java</li>
+                            <li>Android Studio</li>
+                            <li>팀 프로젝트(팀장)/안드로이드 주요 기능 및 서버 연동 구현</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="div-right">
+                    <div class="sub_wrap right3">
+                        <div class="quest_msg_p">
+                            <p class="quest_msg">오랜만이야! 너 요즘 취업 준비 때문에 바쁘다고 들었는데 사실이야? 오, 저런……. 좋아. 이건 너한테만 말해 주는 건데, 요즘은 자기소개서를 앱으로 준비하는 사람들도 있다더라. 너도 한번 도전해 보는 건 어떻게 생각해?</p>
+                        </div>
+                        <p class="quest_notice">완료된 퀘스트입니다.</p>
+                        <p class="quest_title">자기소개 앱, '취준생 A'</p>
+                        <img src="images/profile-detail.png" width="100%">
+                        <div class="quest_text">
+                        <p>설명을 입력합니다. 설명을 입력합니다. 설명을 입력합니다. 설명을 입력합니다. </p>
+                        </div>
+                        <p class="quest_link"><img src="images/git.png">http://</p>
+                        <ul>
+                            <li>개발 기간: 2019.12 ~</li>
+                            <li>Java</li>
+                            <li>Android Studio</li>
+                            <li>개인 프로젝트</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section5">
+            <div class="container" role="main">
+                <div class="div-left">
+                    <div class="sub_wrap left1">
+                        <div class="quest_msg_p">
+                            <p class="quest_msg">매일같이 사용하는 채팅 프로그램, 직접 만들어 볼 수는 없을까? 단순하게 텍스트만 주고받으면 재미없을 테니까, 독특하게 이모티콘 기능이 들어가면 좋을 것 같다. Java를 이용하여 구현해 보자. </p>
+                        </div>
+                        <p class="quest_notice">완료된 퀘스트입니다.</p>
+                        <p class="quest_title">Java 이모티콘 채팅 프로그램</p>
+                        <img src="images/profile-detail.png" width="100%">
+                        <div class="quest_text">
+                           <p>Java를 이용한 채팅 프로그램</p>
+                            <p>이모티콘, 귓속말, 접속자 리스트 기능 구현</p>
+                    </div>
+                        <p class="quest_link"><img src="images/git.png">http://</p>
+                        <ul>
+                            <li>개발 기간: 2019.12 ~</li>
+                            <li>Java</li>
+                            <li>Eclipce</li>
+                            <li>팀 프로젝트(팀장)/연결 및 처리 위주 서버 메소드 구현</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="div-right">
+                    <div class="sub_wrap right3" id="last">
+                        <div class="quest_msg_p">
+                            <p class="quest_msg">아침마다 미세먼지 농도를 확인하는 게 일상이야. 동네처럼 큰 단위가 아니라, 내 현재 위치의 미세먼지 농도를 알 수 있는 방법이 없을까? 도와줘! </p>
+                        </div>
+                        <p class="quest_notice">완료된 퀘스트입니다.</p>
+                        <p class="quest_title">미세먼지 알림, '미세미세미세'</p>
+                        <img src="images/profile-detail.png" width="100%">
+                        <div class="quest_text">
+                            <p>미세먼지 측정 센서를 통해 미세먼지와 온도, 습도를 측정한다.</p>
+                            <p>습도를 나타내는 물방울 아이콘과 미세먼지 농도를 나타내는 문자, LED를 통하여 그 정보를 다양한 형태로 전달한다.</p>
+                        </div>
+                        <p class="quest_link"><img src="images/git.png">pdf 아이콘으로 수정</p>
+                        <ul>
+                            <li>개발 기간: 2019.12 ~</li>
+                            <li>C/C++</li>
+                            <li>Arduino Uno</li>
+                            <li>팀 프로젝트(팀장-팀원 구분X)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/tooltipsy.min.js"></script>
+    <script src="js/tooltipsy.source.js"></script>
+    <script src="js/full-page-scroll.js"></script>
+    <script src="js/my-script.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+
+</body>
+
+</html>
