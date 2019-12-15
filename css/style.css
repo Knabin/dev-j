@@ -3,7 +3,10 @@ body::-webkit-scrollbar {
 }
 
 body {
-    background-size: auto 100%;
+    background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
     background-repeat: repeat-x;
     background-attachment: fixed;
     background-position: bottom;
