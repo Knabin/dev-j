@@ -172,6 +172,7 @@
                         });
                         window.location.hash = "#0";
                         this.fullScroll.changeCurrentPosition;
+                        $("header").position('fixed');
                         isBigSize = false;
                     }
                 }
