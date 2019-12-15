@@ -139,9 +139,9 @@
             }
 
         } else {
-            window.scrollTo(0,1);
             document.body.style.overflowY = "visible";
-
+            document.body.height($(window).height() + 60);
+            
             $('.dots').css({
                 display: "none"
             });
