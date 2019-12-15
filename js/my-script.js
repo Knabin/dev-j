@@ -139,6 +139,7 @@
             }
 
         } else {
+            window.scrollTo(0,1);
             document.body.style.overflowY = "visible";
 
             $('.dots').css({
@@ -174,14 +175,6 @@
                     this.fullScroll.changeCurrentPosition;
                     $("header").position('fixed');
                     isBigSize = false;
-                } else {
-                    var filter = "win16|win32|win64|mac";
-                    if (navigator.platform) {
-                        // 모바일이라면
-                        if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
-                            document.body.style.backgroundSize = "auto 100%";
-                        }
-                    }
                 }
             }
 
