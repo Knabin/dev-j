@@ -135,6 +135,7 @@
                 $('.dots').css({
                     display: "none"
                 });
+                $("header").position('fixed');
                 isBigSize = false;
             }
 
@@ -145,6 +146,7 @@
             $('.dots').css({
                 display: "none"
             });
+            $("header").position('fixed');
             isBigSize = false;
         }
 
