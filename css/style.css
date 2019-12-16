@@ -1,7 +1,9 @@
 body::-webkit-scrollbar {
     display: none;
 }
-
+html {
+    background-color: #d69de8;
+}
 body {
     background-size: auto 100vh;
     -webkit-background-size: auto 100vh;
