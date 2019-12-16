@@ -3,7 +3,6 @@ body::-webkit-scrollbar {
 }
 
 body {
-    height: 100vh;
     background-size: auto 100vh;
     -webkit-background-size: auto 100vh;
     -moz-background-size: auto 100vh;

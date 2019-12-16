@@ -140,14 +140,17 @@
             }
 
         } else {
-            var $w = $(window),
-                $background = $('#body');
+//            var $w = $(window),
+//                $background = $('#body');
             document.body.style.overflowY = "visible";
-            $background.css({'top': 'auto', 'bottom': 0});
-            
-            $w.resize('100vh');
-            $background.height(screen.height);
-            
+            $('body').css({
+                'background-size': '100vh auto'
+            });
+//            $background.css({'top': 'auto', 'bottom': 0});
+//            
+//            $w.resize('100vh');
+//            $background.height(screen.height);
+//            
             $('.dots').css({
                 display: "none"
             });
@@ -183,6 +186,7 @@
                     $("header").position('fixed');
                     isBigSize = false;
                 }
+                $('body').height = 'auto';
             }
 
         });
