@@ -859,6 +859,7 @@ h3 {
 
 #navigation-list {
     list-style: none;
+    display: none;
     text-align: center;
     padding-left: 0px;
     margin: 0;
