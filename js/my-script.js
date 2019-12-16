@@ -145,7 +145,7 @@
             document.body.style.overflowY = "visible";
             $background.css({'top': 'auto', 'bottom': 0});
             
-//            $w.resize(sizeBackground);
+            $w.resize('100vh');
             $background.height(screen.height);
             
             $('.dots').css({
