@@ -142,6 +142,7 @@
         } else {
             document.body.style.overflowY = "visible";
             document.body.height($(window).height() + 60);
+            $("#navigation-list").css.visibility = "hidden";
             
             $('.dots').css({
                 display: "none"
@@ -176,7 +177,6 @@
                     window.location.hash = "#0";
                     this.fullScroll.changeCurrentPosition;
                     $("header").position('fixed');
-                    $("#navigation-list").css.visibility = "hidden";
                     isBigSize = false;
                 }
             }
