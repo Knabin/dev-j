@@ -141,7 +141,6 @@
 
         } else {
             document.body.style.overflowY = "visible";
-            document.body.clientHeight += 60;
             
             $('.dots').css({
                 display: "none"
