@@ -108,7 +108,7 @@
                 $('body').css('background-image', 'url(images/bg.gif)');
                 $('#mask').fadeOut('slow');
             });
-        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent|| navigator.vendor || window.opera)) {
             // 모바일 환경X
             var scroll = new fullScroll({
                 displayDots: true,
@@ -140,7 +140,13 @@
             }
 
         } else {
+            var $w = $(window),
+                $background = $('#body');
             document.body.style.overflowY = "visible";
+            $background.css({'top': 'auto', 'bottom': 0});
+            
+//            $w.resize(sizeBackground);
+            $background.height(screen.height);
             
             $('.dots').css({
                 display: "none"
