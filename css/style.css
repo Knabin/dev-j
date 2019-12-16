@@ -10,9 +10,6 @@ body {
     background-repeat: repeat-x;
     background-attachment: fixed;
     background-position: bottom;
-    
-    position: fixed;
-    z-index: -10;
 
     font-family: 'Nanum Gothic';
 }
