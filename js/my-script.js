@@ -142,7 +142,7 @@
         } else {
             document.body.style.overflowY = "visible";
             document.body.height($(window).height() + 60);
-            $("#navigation-list").css.visibility = "hidden";
+            $("#navigation-list").css.display = "none";
             
             $('.dots').css({
                 display: "none"
