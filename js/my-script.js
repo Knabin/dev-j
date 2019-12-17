@@ -183,9 +183,9 @@
                     });
                     window.location.hash = "#0";
                     this.fullScroll.changeCurrentPosition;
-                    $("header").position('fixed');
                     isBigSize = false;
                 }
+                $("header").position('fixed');
                 $('body').height = 'auto';
             }
 
